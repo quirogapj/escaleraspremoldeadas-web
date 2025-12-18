@@ -1,3 +1,5 @@
+deploy refresh
+
 # Escaleras Premoldeadas - Landing en Next.js 14
 
 Landing page de una sola página para Escaleras Premoldeadas, construida con Next.js 14 (App Router) y Tailwind CSS. Todo el contenido está en español y listo para desplegar sin backend.
