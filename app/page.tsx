@@ -5,22 +5,23 @@ import { ModelCard } from '@/components/model-card';
 import { StepCard } from '@/components/step-card';
 import { FaqItem } from '@/components/faq-item';
 import { StickyWhatsapp } from '@/components/sticky-whatsapp';
+import { FeatureCard } from '@/components/feature-card';
 
 export default function HomePage() {
   return (
-    <main className="pb-24 md:pb-12">
+    <main className="pb-24 md:pb-28">
       <StickyWhatsapp />
-      <section className="hero-grid section-shell relative overflow-hidden pt-16 pb-20 sm:pt-20 sm:pb-24" id="inicio">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="flex flex-col gap-6">
+      <section className="hero-grid section-shell relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28" id="inicio">
+        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
+          <div className="flex flex-col gap-7">
             <span className="badge w-fit">{heroContent.badge}</span>
-            <h1 className="text-4xl font-semibold text-charcoal sm:text-5xl leading-tight">
+            <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">
               {heroContent.headline}
             </h1>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-xl">{heroContent.subheadline}</p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <WhatsappButton label={heroContent.ctaPrimary} />
-              <a href="#modelos" className="btn-secondary">
+            <p className="max-w-xl text-lg leading-relaxed text-gray-700 sm:text-xl">{heroContent.subheadline}</p>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <WhatsappButton label={heroContent.ctaPrimary} className="w-full sm:w-auto" />
+              <a href="#modelos" className="btn-secondary w-full sm:w-auto">
                 {heroContent.ctaSecondary}
               </a>
             </div>
@@ -36,35 +37,35 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="card-surface p-6 sm:p-8 lg:p-10 backdrop-blur">
-              <div className="grid gap-4">
-                <div className="flex items-center justify-between">
+            <div className="card-surface mx-auto max-w-xl backdrop-blur p-6 sm:p-8 lg:p-9">
+              <div className="grid gap-5">
+                <div className="flex items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-primary">Planos ➜ Fabricación ➜ Instalación</p>
                   <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">Proceso completo</span>
                 </div>
                 <div className="grid grid-cols-3 gap-3 text-center text-sm text-gray-700">
                   <div className="rounded-xl bg-primary/5 p-4">
-                    <p className="font-semibold text-charcoal">72h</p>
-                    <p>Producción rápida</p>
+                    <p className="text-base font-semibold text-charcoal">72h</p>
+                    <p className="text-xs">Producción rápida</p>
                   </div>
                   <div className="rounded-xl bg-primary/5 p-4">
-                    <p className="font-semibold text-charcoal">±1 mm</p>
-                    <p>Precisión</p>
+                    <p className="text-base font-semibold text-charcoal">±1 mm</p>
+                    <p className="text-xs">Precisión</p>
                   </div>
                   <div className="rounded-xl bg-primary/5 p-4">
-                    <p className="font-semibold text-charcoal">0</p>
-                    <p>Desperdicio en obra</p>
+                    <p className="text-base font-semibold text-charcoal">0</p>
+                    <p className="text-xs">Desperdicio en obra</p>
                   </div>
                 </div>
                 <div className="rounded-2xl border border-primary/10 bg-sand/30 p-5 text-sm text-gray-800">
                   <p className="font-semibold text-charcoal">Asesoría personalizada</p>
-                  <p>Enviamos renders, fichas técnicas y memoria de cálculo bajo solicitud.</p>
+                  <p className="leading-relaxed">Enviamos renders, fichas técnicas y memoria de cálculo bajo solicitud.</p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm leading-relaxed text-gray-700">
                     Agenda una llamada rápida para revisar medidas y tiempos de entrega.
                   </p>
-                  <WhatsappButton label="Cotizar ahora" variant="secondary" />
+                  <WhatsappButton label="Cotizar ahora" variant="secondary" className="sm:min-w-[160px]" />
                 </div>
               </div>
             </div>
@@ -72,7 +73,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-shell space-y-10 py-12" id="modelos">
+      <section className="section-shell space-y-10 py-16 md:py-20" id="modelos">
         <SectionHeading title={modelsContent.title} description={modelsContent.description} align="center" />
         <div className="grid gap-6 sm:grid-cols-2">
           {modelsContent.models.map((model) => (
@@ -81,7 +82,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-shell space-y-10 py-12" id="proceso">
+      <section className="section-shell space-y-10 py-16 md:py-20" id="proceso">
         <SectionHeading
           title={stepsContent.title}
           description="Acompañamiento de principio a fin con un equipo experto en prefabricados."
@@ -94,23 +95,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-shell space-y-8 py-12" id="beneficios">
+      <section className="section-shell space-y-10 py-16 md:py-20" id="beneficios">
         <SectionHeading
           title={benefitsContent.title}
           description="Menos obra húmeda, más control y precisión para tus proyectos residenciales o comerciales."
           align="center"
         />
-        <div className="card-surface grid gap-4 p-6 sm:p-8">
+        <div className="grid gap-4 sm:grid-cols-2">
           {benefitsContent.items.map((item) => (
-            <div key={item} className="flex items-start gap-3 text-gray-800">
-              <div className="mt-1 h-2.5 w-2.5 rounded-full bg-primary" />
-              <p className="text-sm leading-relaxed">{item}</p>
-            </div>
+            <FeatureCard key={item.title} title={item.title} description={item.description} />
           ))}
         </div>
       </section>
 
-      <section className="section-shell space-y-10 py-12" id="faq">
+      <section className="section-shell space-y-10 py-16 md:py-20" id="faq">
         <SectionHeading title={faqContent.title} align="center" />
         <div className="grid gap-4 md:grid-cols-2">
           {faqContent.items.map((item) => (
@@ -119,7 +117,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-shell pb-16 pt-8" id="contacto">
+      <section className="section-shell pb-20 pt-10 md:pb-24 md:pt-12" id="contacto">
         <div className="card-surface grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4">
             <SectionHeading

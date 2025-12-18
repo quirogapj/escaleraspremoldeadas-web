@@ -58,11 +58,26 @@ export const stepsContent = {
 export const benefitsContent = {
   title: 'Por qué elegir escaleras precast',
   items: [
-    'Ahorro en mano de obra y tiempos de obra civil.',
-    'Geometría perfecta: huellas, contrahuellas y ángulos consistentes.',
-    'Menos desperdicio y limpieza en obra, mayor seguridad y orden.',
-    'Compatibles con acabados en cerámica, porcelanato, madera o microcemento.',
-    'Calidad repetible para proyectos en serie o edificios multifamiliares.',
+    {
+      title: 'Montaje acelerado',
+      description: 'Ahorro en mano de obra y tiempos de obra civil.',
+    },
+    {
+      title: 'Geometría precisa',
+      description: 'Huellas, contrahuellas y ángulos consistentes desde fábrica.',
+    },
+    {
+      title: 'Obra limpia',
+      description: 'Menos desperdicio en sitio, mayor seguridad y orden.',
+    },
+    {
+      title: 'Listas para acabados',
+      description: 'Compatibles con cerámica, porcelanato, madera o microcemento.',
+    },
+    {
+      title: 'Calidad repetible',
+      description: 'Ideal para proyectos en serie o edificios multifamiliares.',
+    },
   ],
 };
 
