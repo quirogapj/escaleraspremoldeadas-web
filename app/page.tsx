@@ -9,19 +9,19 @@ import { FeatureCard } from '@/components/feature-card';
 
 export default function HomePage() {
   return (
-    <main className="space-y-16 pb-24 md:space-y-20 md:pb-28">
+    <main className="pb-24 md:pb-28">
       <StickyWhatsapp />
-      <section className="hero-grid section-shell relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-24" id="inicio">
+      <section className="hero-grid section-shell relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-28" id="inicio">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-7">
             <span className="badge w-fit">{heroContent.badge}</span>
-            <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-charcoal sm:text-5xl lg:text-[3.25rem]">
+            <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">
               {heroContent.headline}
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-gray-700 sm:text-xl">{heroContent.subheadline}</p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-              <WhatsappButton label={heroContent.ctaPrimary} className="w-full sm:w-auto sm:px-6" />
-              <a href="#modelos" className="btn-secondary w-full sm:w-auto sm:px-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <WhatsappButton label={heroContent.ctaPrimary} className="w-full sm:w-auto" />
+              <a href="#modelos" className="btn-secondary w-full sm:w-auto">
                 {heroContent.ctaSecondary}
               </a>
             </div>
@@ -37,7 +37,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="card-surface mx-auto max-w-xl p-6 backdrop-blur sm:p-8 lg:p-9">
+            <div className="card-surface mx-auto max-w-xl backdrop-blur p-6 sm:p-8 lg:p-9">
               <div className="grid gap-5">
                 <div className="flex items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-primary">Planos ➜ Fabricación ➜ Instalación</p>
@@ -127,6 +127,52 @@ export default function HomePage() {
 
       <section className="section-shell" id="contacto">
         <div className="section-surface grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
+      <section className="section-shell space-y-10 py-16 md:py-20" id="modelos">
+        <SectionHeading title={modelsContent.title} description={modelsContent.description} align="center" />
+        <div className="grid gap-6 sm:grid-cols-2">
+          {modelsContent.models.map((model) => (
+            <ModelCard key={model.name} {...model} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-shell space-y-10 py-16 md:py-20" id="proceso">
+        <SectionHeading
+          title={stepsContent.title}
+          description="Acompañamiento de principio a fin con un equipo experto en prefabricados."
+          align="center"
+        />
+        <div className="grid gap-6 md:grid-cols-3">
+          {stepsContent.steps.map((step, index) => (
+            <StepCard key={step.title} index={index + 1} {...step} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-shell space-y-10 py-16 md:py-20" id="beneficios">
+        <SectionHeading
+          title={benefitsContent.title}
+          description="Menos obra húmeda, más control y precisión para tus proyectos residenciales o comerciales."
+          align="center"
+        />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {benefitsContent.items.map((item) => (
+            <FeatureCard key={item.title} title={item.title} description={item.description} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-shell space-y-10 py-16 md:py-20" id="faq">
+        <SectionHeading title={faqContent.title} align="center" />
+        <div className="grid gap-4 md:grid-cols-2">
+          {faqContent.items.map((item) => (
+            <FaqItem key={item.question} {...item} />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-shell pb-20 pt-10 md:pb-24 md:pt-12" id="contacto">
+        <div className="card-surface grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4">
             <SectionHeading
               title={contactContent.title}
