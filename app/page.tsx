@@ -126,52 +126,6 @@ export default function HomePage() {
       </section>
 
       <section className="section-shell" id="contacto">
-        <div className="section-surface grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
-      <section className="section-shell space-y-10 py-16 md:py-20" id="modelos">
-        <SectionHeading title={modelsContent.title} description={modelsContent.description} align="center" />
-        <div className="grid gap-6 sm:grid-cols-2">
-          {modelsContent.models.map((model) => (
-            <ModelCard key={model.name} {...model} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell space-y-10 py-16 md:py-20" id="proceso">
-        <SectionHeading
-          title={stepsContent.title}
-          description="Acompañamiento de principio a fin con un equipo experto en prefabricados."
-          align="center"
-        />
-        <div className="grid gap-6 md:grid-cols-3">
-          {stepsContent.steps.map((step, index) => (
-            <StepCard key={step.title} index={index + 1} {...step} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell space-y-10 py-16 md:py-20" id="beneficios">
-        <SectionHeading
-          title={benefitsContent.title}
-          description="Menos obra húmeda, más control y precisión para tus proyectos residenciales o comerciales."
-          align="center"
-        />
-        <div className="grid gap-4 sm:grid-cols-2">
-          {benefitsContent.items.map((item) => (
-            <FeatureCard key={item.title} title={item.title} description={item.description} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell space-y-10 py-16 md:py-20" id="faq">
-        <SectionHeading title={faqContent.title} align="center" />
-        <div className="grid gap-4 md:grid-cols-2">
-          {faqContent.items.map((item) => (
-            <FaqItem key={item.question} {...item} />
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell pb-20 pt-10 md:pb-24 md:pt-12" id="contacto">
         <div className="card-surface grid gap-8 p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4">
             <SectionHeading
