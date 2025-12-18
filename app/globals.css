@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f7fbfb 0%, #ffffff 45%, #f4ede4 100%);
+}
+
+main {
+  min-height: 100vh;
+}
+
+.section-shell {
+  @apply px-4 sm:px-8 lg:px-16 max-w-6xl mx-auto;
+}
+
+.card-surface {
+  @apply bg-white shadow-soft rounded-2xl border border-sand/70;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-primary/30 bg-white px-4 py-2 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+}
+
+.faq-item {
+  @apply card-surface p-4 md:p-6;
+}
+
+.hero-grid {
+  background: radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.15) 0, transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(15, 118, 110, 0.18) 0, transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(244, 237, 228, 0.6) 0, transparent 30%);
+}
