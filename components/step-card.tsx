@@ -13,7 +13,7 @@ export function StepCard({ index, title, description }: StepCardProps) {
         </span>
         <h3 className="text-lg font-semibold text-charcoal">{title}</h3>
       </div>
-      <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
+      <p className="text-sm text-muted leading-relaxed">{description}</p>
     </article>
   );
 }

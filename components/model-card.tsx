@@ -15,7 +15,7 @@ export function ModelCard({ name, summary, details }: ModelCardProps) {
         <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Listo para instalar</span>
       </div>
       <p className="text-base font-semibold leading-relaxed text-charcoal">{summary}</p>
-      <p className="text-sm text-gray-700 leading-relaxed">{details}</p>
+      <p className="text-sm text-muted leading-relaxed">{details}</p>
     </article>
   );
 }
