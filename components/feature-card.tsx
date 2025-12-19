@@ -10,7 +10,7 @@ export function FeatureCard({ title, description }: FeatureCardProps) {
         <span className="h-2.5 w-2.5 rounded-full bg-primary" aria-hidden />
         <h3 className="text-lg font-semibold text-charcoal">{title}</h3>
       </div>
-      <p className="text-sm leading-relaxed text-gray-700">{description}</p>
+      <p className="text-sm leading-relaxed text-muted">{description}</p>
     </article>
   );
 }

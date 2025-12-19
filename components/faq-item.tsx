@@ -22,7 +22,7 @@ export function FaqItem({ question, answer }: FaqItemProps) {
           {open ? '–' : '+'}
         </span>
       </button>
-      {open ? <p className="mt-3 text-sm text-gray-700 leading-relaxed">{answer}</p> : null}
+      {open ? <p className="mt-3 text-sm text-muted leading-relaxed">{answer}</p> : null}
     </article>
   );
 }
