@@ -3,16 +3,16 @@ export const whatsappLink = 'https://wa.me/573001112233?text=Hola%20quiero%20cot
 export const heroContent = {
   headline: 'Escaleras premoldeadas en concreto reforzado',
   subheadline:
-    'Fabricamos, transportamos e instalamos escaleras listas para terminar en obra, con precisión milimétrica y tiempos récord.',
+    'Fabricamos, transportamos e instalamos escaleras listas para acabados, con precisión milimétrica y tiempos de entrega controlados.',
   ctaPrimary: 'Hablar por WhatsApp',
   ctaSecondary: 'Ver modelos disponibles',
-  badge: 'Listas para instalar en 72 horas',
+  badge: 'Entrega rápida y montaje controlado',
 };
 
 export const modelsContent = {
   title: 'Modelos que se adaptan a tu proyecto',
   description:
-    'Cuatro tipologías de escaleras premoldeadas para vivienda, comercio o industria. Fabricadas con concreto de alto desempeño y acero certificado.',
+    'Cuatro tipologías de escaleras premoldeadas para vivienda, comercio o industria. Concreto de alto desempeño y acero certificado.',
   models: [
     {
       name: 'Estándar',
@@ -56,11 +56,11 @@ export const stepsContent = {
 };
 
 export const benefitsContent = {
-  title: 'Por qué elegir escaleras precast',
+  title: 'Ventajas de elegir escaleras premoldeadas',
   items: [
     {
-      title: 'Montaje acelerado',
-      description: 'Ahorro en mano de obra y tiempos de obra civil.',
+      title: 'Montaje eficiente',
+      description: 'Ahorro en mano de obra y tiempos críticos de obra civil.',
     },
     {
       title: 'Geometría precisa',
@@ -68,7 +68,7 @@ export const benefitsContent = {
     },
     {
       title: 'Obra limpia',
-      description: 'Menos desperdicio en sitio, mayor seguridad y orden.',
+      description: 'Menos desperdicio en sitio, mayor seguridad y orden operativo.',
     },
     {
       title: 'Listas para acabados',
