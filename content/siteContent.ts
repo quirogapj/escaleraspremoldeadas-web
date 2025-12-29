@@ -1,4 +1,4 @@
-export const whatsappLink = 'https://wa.me/573001112233?text=Hola%20quiero%20cotizar%20una%20escalera%20premoldeada';
+export const whatsappLink = 'https://wa.me/5491150128866?text=Hola%20quiero%20cotizar%20una%20escalera%20premoldeada';
 
 export const heroContent = {
   headline: 'Escaleras premoldeadas en concreto reforzado',
@@ -110,7 +110,7 @@ export const contactContent = {
   title: 'Hablemos de tu proyecto',
   description:
     'Compártenos planos, fotos o medidas por WhatsApp y te asesoramos sin costo. También podemos agendar una visita a obra.',
-  phone: '+57 300 111 2233',
+  phone: '+54 9 11 5012 8866',
   email: 'contacto@escaleraspremoldeadas.com',
   address: 'Planta y oficinas: Parque Industrial El Dorado, Bogotá',
 };

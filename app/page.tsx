@@ -20,10 +20,10 @@ const heroHighlights = [
 ];
 
 const modelImages = [
-  'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1529429617124-aee65104c3cf?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=900&q=80',
+  '/modelos/estandar.jpg',
+  '/modelos/empotrada.jpg',
+  '/modelos/plegada.jpg',
+  '/modelos/viga-central.jpg',
 ];
 
 export default function HomePage() {
@@ -66,7 +66,7 @@ export default function HomePage() {
               <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-primary/10 via-white to-accent/10" aria-hidden />
               <div className="relative overflow-hidden rounded-3xl border border-divider shadow-2xl shadow-primary/10">
                 <img
-                  src="https://images.unsplash.com/photo-1505842679547-471ea66c9b60?auto=format&fit=crop&w=1200&q=80"
+                  src="/hero.jpg"
                   alt="Escalera premoldeada en concreto"
                   className="h-full w-full object-cover"
                 />
