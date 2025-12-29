@@ -6,7 +6,7 @@ export const heroContent = {
     'Fabricamos, transportamos e instalamos escaleras listas para acabados, con precisión milimétrica y tiempos de entrega controlados.',
   ctaPrimary: 'Hablar por WhatsApp',
   ctaSecondary: 'Ver modelos disponibles',
-  badge: 'Entrega rápida y montaje controlado',
+  badge: 'Modelos estándar listos en 72 horas',
 };
 
 export const modelsContent = {
