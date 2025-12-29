@@ -162,10 +162,22 @@ export default function HomePage() {
               />
               <div className="grid gap-2 text-sm text-charcoal">
                 <p>
-                  <span className="font-semibold">Teléfono:</span> {contactContent.phone}
+                  <span className="font-semibold">Teléfono:</span>{' '}
+                  <a
+                    href={`tel:${contactContent.phone.replace(/\\s+/g, '')}`}
+                    className="text-primary underline-offset-2 hover:underline"
+                  >
+                    {contactContent.phone}
+                  </a>
                 </p>
                 <p>
-                  <span className="font-semibold">Correo:</span> {contactContent.email}
+                  <span className="font-semibold">Correo:</span>{' '}
+                  <a
+                    href={`mailto:${contactContent.email}`}
+                    className="text-primary underline-offset-2 hover:underline"
+                  >
+                    {contactContent.email}
+                  </a>
                 </p>
                 <p>
                   <span className="font-semibold">Dirección:</span> {contactContent.address}
