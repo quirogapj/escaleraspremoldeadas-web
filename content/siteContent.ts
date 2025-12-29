@@ -111,6 +111,6 @@ export const contactContent = {
   description:
     'Compártenos planos, fotos o medidas por WhatsApp y te asesoramos sin costo. También podemos agendar una visita a obra.',
   phone: '+54 9 11 5012 8866',
-  email: 'escaleraspremoldeadas@arkimetal.com',
+  email: 'obras@escaleraspremoldeadas.com',
   address: 'Morón, Buenos Aires',
 };
